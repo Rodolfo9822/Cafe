@@ -366,3 +366,8 @@ img {
   width: 100%;
   display: block;
 }
+
+a {
+  text-decoration: none;
+  color: #f5e3c7;
+}
