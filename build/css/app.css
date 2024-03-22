@@ -1,4 +1,4 @@
-@import url("href=https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@1,8..60,200..900&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -353,6 +353,8 @@ body {
   font-size: 1.6rem;
   font-family: "Source Serif 4", serif;
   background-color: #291E1E;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 
 h1,
@@ -370,4 +372,110 @@ img {
 a {
   text-decoration: none;
   color: #f5e3c7;
+}
+
+.hero {
+  background-image: url("../img/hero.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65rem;
+  position: relative;
+}
+.hero::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.hero__slogan-box {
+  position: relative;
+  width: min(80rem, 90%);
+  margin: 0rem auto;
+}
+.hero__slogan {
+  text-align: center;
+  font-size: 4rem;
+  color: #f5e3c7;
+  font-weight: 400;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+@media (min: 768px) {
+  .hero__slogan {
+    font-size: 4.8rem;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column-reverse;
+  width: min(130rem, 95%);
+  margin: 0rem auto;
+  position: relative;
+}
+.header__box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.header__brand-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__cafe-name {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #f5e3c7;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.nav__links {
+  font-size: 2rem;
+  color: #BB9E85;
+  text-transform: capitalize;
+  transition: all 0.5s ease-in;
+}
+.nav__links:hover {
+  font-weight: 400;
+  color: #f5e3c7;
+}
+
+.icon {
+  transition: all 0.5s ease-in;
+}
+
+.sign-up {
+  display: flex;
+  margin: 5rem 0;
+  justify-content: end;
+  align-items: center;
+  color: #BB9E85;
+}
+.sign-up:hover > .sign-up__link {
+  font-weight: 400;
+  color: #f5e3c7;
+}
+.sign-up:hover > .icon-tabler {
+  stroke-width: 1.5;
+}
+.sign-up__icon {
+  padding-bottom: 0.5rem;
+}
+.sign-up__link {
+  font-size: 2rem;
+  padding-top: 1rem;
+  transition: all 0.5s ease-in;
 }
