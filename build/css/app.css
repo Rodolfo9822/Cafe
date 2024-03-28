@@ -879,7 +879,7 @@ ol {
   font-size: 2rem;
   font-weight: 400;
   color: #291E1E;
-  line-height: 2;
+  line-height: 1.8;
   text-align: center;
 }
 .history__text tablet {
@@ -941,7 +941,7 @@ ol {
   font-size: 2rem;
   font-weight: 400;
   color: #291E1E;
-  line-height: 2;
+  line-height: 1.8;
   text-align: center;
 }
 .beginning__text tablet {
@@ -978,7 +978,7 @@ ol {
   font-size: 2rem;
   font-weight: 400;
   color: #291E1E;
-  line-height: 2;
+  line-height: 1.8;
   text-align: center;
   padding: 2rem;
   color: #f5e3c7;
@@ -1011,10 +1011,90 @@ ol {
   font-size: 2rem;
   font-weight: 400;
   color: #291E1E;
-  line-height: 2;
+  line-height: 1.8;
   text-align: center;
   padding: 8rem 0;
 }
 .lastPart__text tablet {
   font-size: 2.2rem;
+}
+
+.grateful {
+  background-color: #f5e3c7;
+  box-shadow: inset 0px 0px 50px 20px rgb(53, 37, 37);
+  padding-bottom: 5rem;
+}
+.grateful__text {
+  width: min(100rem, 95%);
+  margin: 0rem auto;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #291E1E;
+  line-height: 1.8;
+  text-align: center;
+  text-align: center;
+}
+.grateful__text tablet {
+  font-size: 2.2rem;
+}
+
+.partner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  width: min(120rem, 90%);
+  margin: 0rem auto;
+  margin-top: 10rem;
+}
+.partner__box {
+  width: 35rem;
+}
+.partner__img-box {
+  height: 45rem;
+}
+.partner__img {
+  border-radius: 20px;
+  object-fit: cover;
+  height: 100%;
+}
+.partner__name {
+  font-size: 2.4rem;
+  color: #f5e3c7;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.ourThoughts {
+  margin-top: 5rem;
+}
+.ourThoughts__text {
+  width: min(120rem, 95%);
+  margin: 0rem auto;
+  font-size: 2.2rem;
+  color: #f5e3c7;
+  font-weight: 400;
+  text-align: center;
+}
+
+.lastThoughts {
+  margin-top: 10rem;
+  background-color: #f5e3c7;
+  box-shadow: inset 0px 0px 50px 20px rgb(53, 37, 37);
+}
+.lastThoughts__text {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #291E1E;
+  line-height: 1.8;
+  text-align: center;
+  padding: 8rem;
+}
+.lastThoughts__text tablet {
+  font-size: 2.2rem;
+}
+
+.partners__footer {
+  margin: 0 auto;
 }
