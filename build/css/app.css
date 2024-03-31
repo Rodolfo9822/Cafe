@@ -1099,6 +1099,32 @@ ol {
   margin: 0 auto;
 }
 
+.reservation {
+  background-image: url("../img/galeria_5.avif");
+}
+@media (min-width: 900px) {
+  .reservation::before {
+    left: 35%;
+    transform: rotate(8deg);
+  }
+}
+@media (min-width: 1000px) {
+  .reservation::before {
+    left: 35%;
+  }
+}
+@media (min-width: 1280px) {
+  .reservation::before {
+    left: 41%;
+    transform: rotate(13deg);
+  }
+}
+@media (min-width: 1600px) {
+  .reservation::before {
+    left: 60rem;
+  }
+}
+
 .container {
   display: flex;
   margin-top: 20rem;
@@ -1120,10 +1146,8 @@ ol {
 }
 @media (min-width: 900px) {
   .container__background {
-    background-image: url("../img/galeria_5.avif");
     background-size: cover;
-    background-position: center;
-    background-color: rebeccapurple;
+    background-position: center center;
     flex: 0.8;
   }
 }
@@ -1140,37 +1164,27 @@ ol {
     top: -40rem;
     height: 180rem;
     position: absolute;
-    transform: rotate(10deg);
     background-color: #928478;
     width: 14rem;
-    left: 35%;
-    transform: rotate(8deg);
     box-shadow: inset 20px 0px 15px 0px rgba(0, 0, 0, 0.5);
   }
 }
 @media (min-width: 1000px) {
   .container::before {
     width: 16rem;
-    left: 35%;
   }
 }
 @media (min-width: 1280px) {
   .container::before {
     top: -40rem;
     width: 16rem;
-    transform: rotate(13deg);
-    left: 41%;
     height: 120rem;
-  }
-}
-@media (min-width: 1600px) {
-  .container::before {
-    left: 60rem;
   }
 }
 
 .form {
   padding: 2rem 0rem;
+  width: 100%;
 }
 @media (min-width: 480px) {
   .form {
@@ -1261,4 +1275,35 @@ ol {
 .form__button:hover {
   box-shadow: inset 0px 0px 10px 2px #352525;
   /* transform: scale(0.85); */
+}
+
+.signup__container {
+  background-image: url("../img/crear_cuenta.avif");
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media (min-width: 900px) {
+  .signup__container::before {
+    right: 35%;
+    transform: rotate(8deg);
+    box-shadow: inset -20px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    width: 16rem;
+  }
+}
+@media (min-width: 1000px) {
+  .signup__container::before {
+    width: 14rem;
+    right: 40%;
+  }
+}
+@media (min-width: 1280px) {
+  .signup__container::before {
+    width: 16rem;
+    right: 37%;
+  }
+}
+@media (min-width: 1600px) {
+  .signup__container::before {
+    right: 60rem;
+  }
 }
