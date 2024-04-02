@@ -39,11 +39,11 @@ export const cards = (function () {
 
             const coffeeQuantity = document.createElement("p");
             coffeeQuantity.textContent = quantity;
-            coffeeQuantity.classList.add("product__quantity");
+            coffeeQuantity.classList.add("product__features");
 
             const coffePrice = document.createElement("p");
             coffePrice.textContent = price;
-            coffePrice.classList.add("product__price");
+            coffePrice.classList.add("product__features");
 
             featureBox.appendChild(coffeeQuantity);
             featureBox.appendChild(coffePrice);
@@ -55,7 +55,9 @@ export const cards = (function () {
             container.appendChild(box);
         });
 
-        menu.appendChild(container);
+        section.appendChild(whichTitle);
+        section.appendChild(container);
+        menu.appendChild(section);
     }
 
 

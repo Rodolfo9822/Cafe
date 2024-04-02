@@ -1,4 +1,4 @@
-import { coffeePattern } from "./classes/coffee.js"
+import { coffeePattern } from "./logic/coffee.js"
 
 
 
