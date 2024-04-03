@@ -3,7 +3,7 @@ import { mealsPattern } from "./logic/meals.js"
 
 
 const showing = async () => {
-    /* coffeePattern.ToStart(); */
+    coffeePattern.ToStart();
     mealsPattern.toStart();
 
 }

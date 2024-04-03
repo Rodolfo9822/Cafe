@@ -19,7 +19,8 @@ export const coffeePattern = (function () {
             }
             ]
         });
-        return featuresCard;
+        const quantity = featuresCard.length
+        return featuresCard.splice(0, (quantity - 2));
     }
 
     const gettingDrinks = async () => {
