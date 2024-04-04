@@ -1,10 +1,17 @@
 import { coffeePattern } from "./logic/coffee.js"
 import { mealsPattern } from "./logic/meals.js"
-
+import { promoteAnimation } from "./animations/promotes.js"
+import { variables } from "./DOM/domVariables.js"
 
 const showing = async () => {
-    coffeePattern.ToStart();
-    mealsPattern.toStart();
+
+    const { menu, promote } = variables;
+    if (menu) {
+        coffeePattern.ToStart();
+        mealsPattern.toStart();
+    }
+
+    promoteAnimation.executed;
 
 }
 
