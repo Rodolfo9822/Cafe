@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 
-<body>
+<body id="to-message">
 
     <section class="global-hero hero">
 
@@ -75,7 +75,7 @@
         </div>
     </section>
 
-    <main class="container signup__container">
+    <main class="container signup__container" id="sign-up">
 
         <section class="container__background">
 
@@ -88,41 +88,43 @@
                     <legend class="form__legend">Crea una cuenta en Coffee house</legend>
 
                     <div class="form__field-box">
-                        <label class="form__label" for="name_cuenta">nombre:</label>
-                        <input class="form__input" id="name_cuenta" type="text" required
+                        <label class="form__label" for="name_account">nombre:</label>
+                        <input class="form__input" id="name_account" type="text" required
                             placeholder="Juan Perez Hernandez">
                     </div>
 
                     <div class="form__field-box">
-                        <label class="form__label" for="nickname_cuenta">nickname:</label>
-                        <input class="form__input" id="nickname_cuenta" type="text" required placeholder="JuanPerez22">
+                        <label class="form__label" for="nickname_account">nickname:</label>
+                        <input class="form__input" id="nickname_account" type="text" required placeholder="JuanPerez22">
                     </div>
 
                     <div class="form__field-box">
-                        <label class="form__label" for="telefono_cuenta">telefono:</label>
-                        <input class="form__input" id="telefono_cuenta" type="number" required
-                            placeholder="1111-2222-0000">
+                        <label class="form__label" for="telefono_account">telefono:</label>
+                        <input class="form__input" id="telefono_account" type="number" required
+                            placeholder="1111-2222-0000" min="0">
                     </div>
 
                     <div class="form__field-box">
-                        <label class="form__label" for="email_cuenta">email:</label>
-                        <input class="form__input" id="email_cuenta" type="email" required
+                        <label class="form__label" for="email_account">email:</label>
+                        <input class="form__input" id="email_account" type="email" required
                             placeholder="juan@outlook.com">
                     </div>
 
                     <div class="form__field-box">
-                        <label class="form__label" for="email_cuenta">constraña:</label>
-                        <input class="form__input" id="email_cuenta" type="password" required placeholder="*********">
+                        <label class="form__label" for="password_account">constraña:</label>
+                        <input class="form__input" id="password_account" type="password" required
+                            placeholder="*********">
                     </div>
 
                     <div class="form__field-box">
-                        <label class="form__label" for="email_cuenta">Repetir contra:</label>
-                        <input class="form__input" id="email_cuenta" type="password" required placeholder="*********">
+                        <label class="form__label" for="repeated_account">Repetir contra:</label>
+                        <input class="form__input" id="repeated_account" type="password" required
+                            placeholder="*********">
                     </div>
                 </fieldset>
 
                 <div class="form__button-box">
-                    <button class="form__button">crear cuenta</button>
+                    <button id="signUp_button" class="form__button" type="submit">crear cuenta</button>
                 </div>
 
             </form>
@@ -169,7 +171,7 @@
 
     </footer>
 
-
+    <script src="js/app.js" type="module"></script>
 </body>
 
 </html>

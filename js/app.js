@@ -1,7 +1,9 @@
 import { coffeePattern } from "./logic/coffee.js"
 import { mealsPattern } from "./logic/meals.js"
+import { form } from "./logic/form.js"
 import { promoteAnimation } from "./animations/promotes.js"
 import { variables } from "./DOM/domVariables.js"
+
 
 const showing = async () => {
 
@@ -12,6 +14,8 @@ const showing = async () => {
     }
 
     promoteAnimation.executed;
+    form.executed;
+    form.executedReservation;
 
 }
 

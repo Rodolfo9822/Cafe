@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 
-<body>
+<body id="to-message">
 
     <section class="global-hero hero">
 
@@ -76,7 +76,7 @@
     </section>
 
 
-    <main class="reservation container">
+    <main class="reservation container" id="reservationMain">
 
         <section class="container__background">
 
@@ -88,32 +88,32 @@
                 <fieldset class="form__fieldset">
                     <legend class="form__legend">Si deseas realizar una reservacion, llena el formulario.</legend>
                     <div class="form__field-box">
-                        <label class="form__label" for="name_field">nombre:</label>
-                        <input class="form__input" id="name_field" type="text" required
+                        <label class="form__label" for="name_reservation">nombre:</label>
+                        <input class="form__input" id="name_reservation" type="text" required
                             placeholder="Juan Perez Hernandez">
                     </div>
                     <div class="form__field-box">
-                        <label class="form__label" for="telefono__field">telefono:</label>
-                        <input class="form__input" id="telefono__field" type="number" required
-                            placeholder="1111-2222-0000">
+                        <label class="form__label" for="phone_reservation">telefono:</label>
+                        <input class="form__input" id="phone_reservation" type="number" required
+                            placeholder="1111-2222-0000" min="1">
                     </div>
                     <div class="form__field-box">
-                        <label class="form__label" for="email__field">email:</label>
-                        <input class="form__input" id="email__field" type="email" required
+                        <label class="form__label" for="email_reservation">email:</label>
+                        <input class="form__input" id="email_reservation" type="email" required
                             placeholder="juan@outlook.com">
                     </div>
                     <div class="form__field-box">
-                        <label class="form__label" for="fecha__field">fecha:</label>
-                        <input class="form__input" id="fecha__field" type="date" required>
+                        <label class="form__label" for="fecha_reservation">fecha:</label>
+                        <input class="form__input" id="fecha_reservation" type="date" required>
                     </div>
                     <div class="form__field-box">
-                        <label class="form__label" for="personas__field">no. personas:</label>
-                        <input class="form__input" id="personas__field" type="number" required
-                            placeholder="Solo escribe el numero de personas">
+                        <label class="form__label" for="personas_reservation">no. personas:</label>
+                        <input class="form__input" id="personas_reservation" type="number" required
+                            placeholder="Solo escribe el numero de personas" min="1">
                     </div>
                 </fieldset>
                 <div class="form__button-box">
-                    <button class="form__button">reservar</button>
+                    <button id="reservation-button" class="form__button" type="submit">reservar</button>
                 </div>
             </form>
 
@@ -162,7 +162,7 @@
 
     </footer>
 
-
+    <script src="js/app.js" type="module"></script>
 </body>
 
 </html>
